@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login - cscd shopping au</title>
+
+    <link href="/dist/lib/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/dist/css/account/index.css" rel="stylesheet">
+    <link href="/dist/lib/layer/need/layer.css" rel="stylesheet">
+    <script src="/dist/lib/layer/layer.js"></script>
+    <script src="/dist/lib/jquery.min.js"></script>
+    <script src="/dist/lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="/dist/lib/lodash.min.js"></script>
+    <script src="/dist/lib/backbone.min.js"></script>
+    <script src="/dist/js/account/register/index.js"></script>
+</head>
+<body>
+    <div class="container main">
+        <div class="row">
+            <div class="form-container col-lg-4 col-lg-offset-4 col-sm-8 col-sm-offset-2">
+                <img width="200px" src="/dist/images/logo.png" alt="" class="img-resoponse">
+                <div class="form-title">SIGN UP</div>
+                <form role="form" >
+                    <div class="form-group username-group">
+                        <label class="sr-only" for="username">username</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="username" username="username" placeholder="username" aria-describedby="userNameInputError"/>
+                        </div>
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <span id="userNameInputError" class="sr-only"></span>
+                        <span class="err-msg"></span>
+                    </div>
+                    <div class="form-group email-group">
+                        <label class="sr-only" for="email">email</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" username="email" placeholder="E-mail" aria-describedby="emailInputError"/>
+                        </div>
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <span id="emailInputError" class="sr-only"></span>
+                        <span class="err-msg"></span>
+                    </div>
+                    <div class="form-group password-group">
+                        <label class="sr-only" for="password">password</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" id="password" username="password" placeholder="password" aria-describedby="passwordInputError"/>
+                        </div>
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <span id="passwordInputError" class="sr-only"></span>
+                        <span class="err-msg"></span>
+                    </div>
+                    <div class="pull-right policy">
+                        <a href="javascript:void(0);">Privacy Policy</a>
+                    </div>
+                    <div class="form-group ">
+                        <button type="button" id="sign-up" class="btn btn-block btn-lg" disabled>
+                            SIGN UP</button>
+                    </div>
+                    <div class="text-center">
+                        <a id="back-sign-in" href="signin">← back to sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container"></div>
+    </footer> 
+</body>
+</html>
