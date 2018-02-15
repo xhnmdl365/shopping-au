@@ -43,15 +43,15 @@ public class UseController {
 	}
 
 
-	@RequestMapping("/index")
+	@RequestMapping(value={"", "/index"})
 	public String index() {
 		System.out.println("index:");
 		System.out.println(SecurityUtils.getSubject().getPrincipal());
-		return "/dist/index";
+		return "dist/index";
 	}
 	@RequestMapping("/signup")
 	public String signUp() {
-		return "/dist/html/account/signup";
+		return "dist/html/account/signup";
 	}
 
 
@@ -87,7 +87,7 @@ public class UseController {
 
 	@RequestMapping("/signin")
 	public String login() {
-		return "/dist/html/account/signin";
+		return "dist/html/account/signin";
 	}
 	/**
 	 * ajax login
