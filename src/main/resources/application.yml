@@ -1,14 +1,14 @@
-server:
-  port: 8080
-  #spring默认的context path
-#  context-path: /springboot
-#  session:
-#    timeout:
+#server:
+#  port: 8080
+#  #spring默认的context path
+##  context-path: /springboot
+##  session:
+##    timeout:
 spring:
   datasource:
-    url: jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_ef8b13d33be2d76?useSSL=false
-    username: b4bbd900347931
-    password: de0d5e10
+    url: jdbc:mysql://us-cdbr-iron-east-05.cleardb.net:3306/heroku_6469a221573369a?reconnect=true&?useSSL=false
+    username: b04705524280f6
+    password: 1078caa5
     driver-class-username: com.mysql.jdbc.Driver
   thymeleaf:
     prefix: classpath:/static/
