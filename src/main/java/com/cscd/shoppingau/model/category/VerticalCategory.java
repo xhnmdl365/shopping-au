@@ -9,8 +9,8 @@ import java.sql.Timestamp;
  */
 public class VerticalCategory {
 
-	private int categoryId;
-	private int parentId;
+	private long categoryId;
+	private long parentId;
 	private String name;
 	private String desc;
 	private String url;
@@ -22,19 +22,19 @@ public class VerticalCategory {
 	private Timestamp updateTime;
 
 
-	public int getCategoryId() {
+	public long getCategoryId() {
 		return categoryId;
 	}
 
-	public void setCategoryId(int categoryId) {
+	public void setCategoryId(long categoryId) {
 		this.categoryId = categoryId;
 	}
 
-	public int getParentId() {
+	public long getParentId() {
 		return parentId;
 	}
 
-	public void setParentId(int parentId) {
+	public void setParentId(long parentId) {
 		this.parentId = parentId;
 	}
 

@@ -7,6 +7,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -22,6 +23,7 @@ import java.util.List;
 
 @SpringBootApplication
 @MapperScan("com.cscd.shoppingau.mapper")
+@EnableCaching
 public class ShoppingauApp {
 	@Bean
 	public HttpMessageConverters FastJsonHttpMessageConverters() {
@@ -47,5 +49,7 @@ public class ShoppingauApp {
 	public static void main(String[] args) {
 		SpringApplication.run(ShoppingauApp.class);
 	}
+
+
 }
 

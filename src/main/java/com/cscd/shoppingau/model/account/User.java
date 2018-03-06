@@ -32,7 +32,7 @@ public class User {
 	@DataUnique(keyName = "email", dataTable = "user", message = "this email address is existed")
 	private String email;
 
-	private int userId;
+	private long userId;
 	private int status;
 	private String firstname;
 	private String lastname;
@@ -50,11 +50,11 @@ public class User {
 		this.salt = salt;
 	}
 
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 

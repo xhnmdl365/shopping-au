@@ -20,19 +20,19 @@ public class Tool {
 
 
 
-	public static boolean emptyCheck(String str) {
+	public static boolean isNotEmpty(String str) {
 		return str != null && !("").equals(str);
 	}
-	public static boolean emptyCheck(List list) {
+	public static boolean isNotEmpty(List list) {
 		return list != null && !list.isEmpty();
 	}
-	public static boolean emptyCheck(Map map) {
+	public static boolean isNotEmpty(Map map) {
 		return map != null && !map.isEmpty();
 	}
-	public static boolean emptyCheck(Set set) {
+	public static boolean isNotEmpty(Set set) {
 		return set != null && !set.isEmpty();
 	}
-	public static boolean emptyCheck(Date date) {
+	public static boolean isNotEmpty(Date date) {
 		return date != null;
 	}
 

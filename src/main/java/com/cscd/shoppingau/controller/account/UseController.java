@@ -47,7 +47,7 @@ public class UseController {
 	public String index() {
 		System.out.println("index:");
 		System.out.println(SecurityUtils.getSubject().getPrincipal());
-		return "dist/index";
+		return "dist/html/index";
 	}
 	@RequestMapping("/signup")
 	public String signUp() {

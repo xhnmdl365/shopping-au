@@ -22,4 +22,8 @@ public class CategoryService {
 	public List<VerticalCategory> getCurrentVerticalCAT() {
 		return categoryMapper.getCurrentVerticalCAT();
 	}
+	public List<VerticalCategory> getCategoriesByParentId(String parentCategoryId) {
+		return categoryMapper.getCategoriesByParentId(parentCategoryId);
+	}
+
 }
