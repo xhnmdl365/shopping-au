@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="shop_au@localhost" uuid="c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9">
+      <database-info product="MySQL" version="5.7.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:flashshop2.3,shop_au</introspection-schemas>
+    </data-source>
+    <data-source name="heroku_6469a221573369a@us-cdbr-iron-east-05.cleardb.net" uuid="8875d70d-bcd5-4163-b4c7-baaca3ad6cc6">
+      <database-info product="MySQL" version="5.6.36-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>b04705524280f6</user-name>
+      <introspection-schemas>*:heroku_6469a221573369a</introspection-schemas>
+    </data-source>
+  </component>
+</project>
