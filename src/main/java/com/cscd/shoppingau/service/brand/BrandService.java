@@ -8,6 +8,7 @@ package com.cscd.shoppingau.service.brand;
 
 import com.cscd.shoppingau.mapper.brand.BrandMapper;
 import com.cscd.shoppingau.model.Brand;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.jdbc.SQL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -22,23 +23,18 @@ public class BrandService {
 
 	@Autowired
 	private BrandMapper brandMapper;
-	@Cacheable(value = "brandList", key="1")
+	@Cacheable(value = "brandList", key="#root.methodName")
 	public List<Brand> getAllBrands() {
 		return brandMapper.getAllBrands();
 	}
 
-	@CacheEvict(value = "brandList" , key="1")
-	public Brand addToCache(Brand brand) {
-
-
-
-		System.out.println("addToCache");
-		brand.setBrandId(1);
-		brand.setName("abc");
-		return brand;
+	@Cacheable(value = "brand", key="#brandId")
+	public Brand getBrandById(String brandId) {
+		return brandMapper.getBrandById(brandId);
 	}
-	@CacheEvict(value = "brandList", key="1")
-	public void deleteFromCache() {
-		System.out.println("delete from cache");
+	@Cacheable(value = "brand", key="#brandIds")
+	public List<Brand> getBrandByIds(String brandIds) {
+		return brandMapper.getBrandByIds(brandIds);
 	}
+
 }

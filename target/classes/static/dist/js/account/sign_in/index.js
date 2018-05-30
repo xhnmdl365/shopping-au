@@ -97,7 +97,12 @@ module.exports = BackBone.View.extend({
 				,skin: 'msg'
 				,time: 2 //2秒后自动关闭
 			});
-			this.signInSwitch('disable');
+			this.signInSwitch('enable');
+			var link = new URL(window.location.href).searchParams.get('link')
+			if(!link) {
+				link = '/'
+			}
+			window.location.href = link
 		}else {
 			layer.open({
 				content: rs.msg

@@ -48,7 +48,6 @@ public class MyShiroRealm extends AuthorizingRealm {
 		UsernamePasswordToken token = (UsernamePasswordToken) authcToken;
 		logger.info("user login : " + token.getUsername());
 		User user = userService.getUserByEmail(token.getUsername());
-		System.out.println("user="+user);
 		if(user == null){
 			logger.error("user { "+token.getUsername()+" } doesn't exist ");
 			throw new AccountException("This account doesn't exist");

@@ -248,6 +248,8 @@ module.exports = BackBone.View.extend({
 				,time: 2 //2秒后自动关闭
 			});
 			this.signUpSwitch('disable');
+			window.location.href = '/signin';
+
 		}else if(code === '001') {
 			// data is invalid
 			layer.open({

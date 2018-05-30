@@ -33,6 +33,7 @@ public class BrandController {
 		String code = "000";
 		String msg = "success";
 		try {
+//			PageHelper.startPage(1, 2);
 			List list = brandService.getAllBrands();
 			rtMap.put("data", list);
 		} catch(Exception e) {
@@ -46,18 +47,4 @@ public class BrandController {
 		return rtMap;
 	}
 
-	@PostMapping("/addToCache")
-	public Brand addToCache() {
-
-		Brand b = new Brand();
-		Brand b1 = brandService.addToCache(b);
-
-		return b1;
-	}
-	@PostMapping("/deleteFromCache")
-	public void deleteFromCache() {
-
-		brandService.deleteFromCache();
-
-	}
 }

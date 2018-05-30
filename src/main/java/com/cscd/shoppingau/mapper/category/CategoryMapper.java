@@ -1,5 +1,6 @@
 package com.cscd.shoppingau.mapper.category;
 
+import com.cscd.shoppingau.model.category.Category;
 import com.cscd.shoppingau.model.category.VerticalCategory;
 import org.apache.ibatis.annotations.*;
 
@@ -19,8 +20,19 @@ public interface CategoryMapper {
 			" from vertical_category where status = 1")
 	List<VerticalCategory> getCurrentVerticalCAT();
 
-	@Select("select category_id, parent_id, name, url, is_popular, background, icon, is_show_sub" +
-			" from vertical_category where status = 1" +
+	@Select("select category_id, parent_id, name" +
+			" from category where status = 1" +
 			" AND CASE WHEN #{parentCategoryId} is NULL then category_id=parent_id else parent_id=#{parentCategoryId} end;")
-	List<VerticalCategory> getCategoriesByParentId(@Param("parentCategoryId") final String parentCategoryId);
+	List<Category> getCategoriesByParentId(@Param("parentCategoryId") final String parentCategoryId);
+
+	@Select("select category_id, parent_id, name" +
+			" from category where status = 1" +
+			" and category_id=#{categoryId} ")
+	List<Category> getCategoryById(@Param("categoryId") final String categoryId);
+
+	@Select("select category_id, parent_id, name, status" +
+			" from category where status = 1" +
+			" and position(category_id in #{categoryIds})")
+	List<Category> getCategoriesByIds(@Param("categoryIds") final String categoryIds);
+
 }

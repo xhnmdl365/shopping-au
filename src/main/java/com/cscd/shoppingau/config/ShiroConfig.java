@@ -55,9 +55,7 @@ public class ShiroConfig {
 		// <!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
 		filterChainDefinitionMap.put("/**", "anon");
 
-		shiroFilterFactoryBean
-				.setFilterChainDefinitionMap(filterChainDefinitionMap);
-		System.out.println("Shiro拦截器工厂类注入成功");
+		shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
 		return shiroFilterFactoryBean;
 	}
 

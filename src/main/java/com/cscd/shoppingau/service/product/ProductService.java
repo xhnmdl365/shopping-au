@@ -1,19 +1,15 @@
 package com.cscd.shoppingau.service.product;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.support.spring.MappingFastJsonValue;
-import com.cscd.shoppingau.mapper.indexPromote.IndexPromoteMapper;
 import com.cscd.shoppingau.mapper.product.ProductMapper;
-import com.cscd.shoppingau.model.Brand;
-import com.cscd.shoppingau.model.category.VerticalCategory;
 import com.cscd.shoppingau.service.brand.BrandService;
 import com.cscd.shoppingau.service.category.CategoryService;
 import com.cscd.shoppingau.utils.Tool;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
+import javax.rmi.CORBA.Util;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,8 +34,14 @@ public class ProductService {
 	@Autowired
 	private CategoryService categoryService;
 
-	public Map getProductsByKeyword(String keyword, String brandId, String cIds) {
+	private final int productPageSize = 2;
+	private final int maxProductPrice = 99999999;
+	public Map getProductsByKeyword(String keyword, String brandId,
+									String cIds, String priceRange, String sort, int currentPage) {
 
+		// when user input the key words, We split the word to servral words
+		// And we keep the whole word to a situation eg. input: microsoft Surface , we match the
+		// whole word "microsoft Surface" and "microsoft" and "Surface"
 		String[] keywords = null;
 		if(Tool.isNotEmpty(keyword)) {
 			keywords = keyword.split(" ");
@@ -52,47 +54,97 @@ public class ProductService {
 			String[] cIdArr = cIds.split(",");
 			categoryId = cIdArr[cIdArr.length -1];
 		}
-		System.out.println("keyword= "+ keyword);
-		System.out.println("keywords = " + keywords);
-		System.out.println("brandId = " + brandId);
-		System.out.println("categoryId = " + categoryId);
+		int priceRangeFrom = -1;
+		int priceRangeTo = -1;
+		if(Tool.isNotEmpty(priceRange)) {
+			String[] priceRangeArr = priceRange.split(",");
+			priceRangeFrom = Integer.valueOf(priceRangeArr[0]);
+			if(priceRangeArr.length == 1) {
+				priceRangeTo = maxProductPrice;
+			} else {
+				priceRangeTo = Integer.valueOf(priceRangeArr[1]);
+			}
+		}
+		String sortBy = "";
+		if(Tool.isNotEmpty(sort)) {
+			String[] sortByArr = sort.split("_");
+			if(sortByArr.length == 1) {
+				sortBy = sortByArr[0];
+				if("orders".equals(sortBy)){
+					sortBy = "sale_volume DESC";
+				} else if("rating".equals(sortBy)){
+					sortBy = "rate DESC";
+				} else if("price".equals(sortBy)) {
+					sortBy = "price DESC";
+				}
+			}else if(sortByArr.length == 2){
+				String tempSortBy = sortByArr[0];
+				if("orders".equals(tempSortBy) || "rating".equals(tempSortBy) || "price".equals(tempSortBy)) {
+					sortBy = tempSortBy;
+					if("asc".equalsIgnoreCase(sortByArr[1])) {
+						sortBy = tempSortBy + " ASC";
+					}
+				}
+			}
+		}
 
+		// page
+		PageHelper.startPage(currentPage, productPageSize);
+		List ProductsList = productMapper.getProductsByKeyWord(keyword, keywords, brandId, categoryId, priceRangeFrom, priceRangeTo, sortBy);
 
-		List ProductsList = productMapper.getProductsByKeyWord(keyword, keywords, brandId, categoryId);
+		// pageInfo
+		PageInfo pageInfo = new PageInfo(ProductsList);
+		Map productsListPageInfo = Tool.getPageInfo(pageInfo);
 
-		List brandsProductsList = null;
+		List productsBrandsList = null;
 		if(!Tool.isNotEmpty(brandId)) {
 			// if brandId is not null. It means there are more than 1 brand in the product list
 			// otherwise, there already is a brand selected
-			brandsProductsList = productMapper.getBrandsByProducts(keyword, keywords,  categoryId);
+			productsBrandsList = productMapper.getBrandsByProducts(keyword, keywords, categoryId, priceRangeFrom, priceRangeTo, sortBy);
 		}
 
-		List categoriesProductsList = null;
-		categoriesProductsList = productMapper.getCategoriesByProducts(keyword, keywords, brandId, categoryId);
-
-		List<VerticalCategory> subCategoriesList = new ArrayList();
-		subCategoriesList = categoryService.getCategoriesByParentId(categoryId);
-
-		if(!Tool.isNotEmpty(categoryId)) {
-			// if categoryId is not null. It means there are more than 1 brand in the product list
-			// otherwise, there already is a brand selected
+		List productsCategoriesList = null;
+		productsCategoriesList = productMapper.getCategoriesByProducts(keyword, keywords, brandId, categoryId, priceRangeFrom, priceRangeTo, sortBy);
 
 
-		}
-		for(int i=0; i< subCategoriesList.size(); i ++) {
-			String subCategoryId = String.valueOf(subCategoriesList.get(i).getCategoryId());
-			for(int j=0; j< categoriesProductsList.size(); j ++) {
-
-			}
-		}
 		Map productInfoMap = new HashMap();
-		productInfoMap.put("brandsProductsList", brandsProductsList);
-		productInfoMap.put("ProductsList", ProductsList);
-		productInfoMap.put("categoriesProductsList", categoriesProductsList);
+		productInfoMap.put("productsListPageInfo", productsListPageInfo);
+		productInfoMap.put("productsBrandsList", productsBrandsList);
+		productInfoMap.put("productsList", ProductsList);
+		productInfoMap.put("productsCategoriesList", productsCategoriesList);
 
 		return productInfoMap;
 	}
 
+	public Map getProductBaseInfo(String productId) {
+		return productMapper.getProductBaseInfo(productId);
+	}
+
+	public List getProductAttrs(String productId) {
+		return productMapper.getProductAttrs(productId);
+	}
+	public List getProductImgs(String productId) {
+		return productMapper.getProductImgs(productId);
+	}
+	public List getProductSkuList(String productId) {
+		return productMapper.getProductSkuList(productId);
+	}
+	public Map getProductUserRate(String productId, int currentPage) {
+		final int userRatePageSize = 20;
+		PageHelper.startPage(currentPage, userRatePageSize);
+		List userRateList = productMapper.getProductUserRate(productId);
+		PageInfo pageInfo = new PageInfo(userRateList);
+		Map userRatePageInfo = Tool.getPageInfo(pageInfo);
+
+		Map productUserRate = new HashMap();
+		productUserRate.put("userRatePageInfo", userRatePageInfo);
+		productUserRate.put("userRateList", userRateList);
+		return productUserRate;
+	}
+
+	public Map getProductBySkuId(String skuId) {
+		return productMapper.getProductBySkuId(skuId);
+	}
 //	private Boolean isContainName(List<Brand> brandList, String keyword) {
 //		int i= 0;
 //		for(Brand brand: brandList) {

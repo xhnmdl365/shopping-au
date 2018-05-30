@@ -1,5 +1,6 @@
 package com.cscd.shoppingau.utils;
 
+import com.github.pagehelper.PageInfo;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.validation.BindingResult;
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @Description
@@ -53,5 +56,24 @@ public class Tool {
 		}
 		return rsMap;
 	}
+
+	public static boolean isNumber(String str) {
+		Pattern pattern = Pattern.compile("-?[0-9]+\\.?[0-9]*");
+		Matcher isNum = pattern.matcher(str);
+		if (!isNum.matches()) {
+			return false;
+		}
+		return true;
+	}
+	public static Map getPageInfo(PageInfo pageInfo) {
+		Map pageInfoMap = new HashMap();
+		pageInfoMap.put("total", pageInfo.getTotal());
+		pageInfoMap.put("currentPage", pageInfo.getPageNum());
+		pageInfoMap.put("totalPage", pageInfo.getPages());
+		pageInfoMap.put("isHasNextPage", pageInfo.isHasNextPage());
+		pageInfoMap.put("isHasPreviousPage", pageInfo.isHasPreviousPage());
+		return pageInfoMap;
+	}
+
 
 }
