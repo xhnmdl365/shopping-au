@@ -2,84 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed9c22f6-2934-45bf-85e4-01b92355b021" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/headImages/head.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/image-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/index-promote/beauty-promote.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/index-promote/electronics-promote.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/menu-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/no-image-available.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/products/iphonex/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/products/iphonex/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/products/iphonex/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/products/iphonex/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/star-empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/919032befae38e812f06be7b11ec0aaf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/b67f4186cbd2488e964d5751ac73dc9f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/product/CartController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/product/CartMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/model/Cart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/model/category/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/product/CartService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/my-cart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/product-info.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/search.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/dist/images/products/iphoneX/iphonex.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/config/ShiroConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/config/ShiroConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/controller/brand/BrandController.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/controller/brand/BrandController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/controller/category/CategoryController.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/controller/category/CategoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/controller/product/ProductController.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/controller/product/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/mapper/brand/BrandMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/mapper/brand/BrandMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/mapper/category/CategoryMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/mapper/category/CategoryMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/mapper/product/ProductMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/mapper/product/ProductMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/brand/BrandService.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/brand/BrandService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/category/CategoryService.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/category/CategoryService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/indexPromote/IndexPromoteService.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/indexPromote/IndexPromoteService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/product/ProductService.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/service/product/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/shiro/MyShiroRealm.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/shiro/MyShiroRealm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$1.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$2.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$3.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$4.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$5.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/utils/Tool.class" afterPath="$PROJECT_DIR$/target/classes/com/cscd/shoppingau/utils/Tool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8875d70d-bcd5-4163-b4c7-baaca3ad6cc6.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8875d70d-bcd5-4163-b4c7-baaca3ad6cc6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.log" afterPath="$PROJECT_DIR$/log.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shopping-au.iml" afterPath="$PROJECT_DIR$/shopping-au.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/config/ShiroConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/config/ShiroConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/brand/BrandController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/brand/BrandController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/category/CategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/category/CategoryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/product/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/product/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/brand/BrandMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/brand/BrandMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/category/CategoryMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/category/CategoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/product/ProductMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/product/ProductMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/brand/BrandService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/brand/BrandService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/category/CategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/category/CategoryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/indexPromote/IndexPromoteService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/indexPromote/IndexPromoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/product/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/product/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/shiro/MyShiroRealm.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/shiro/MyShiroRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/sqlprovider/product/ProductSqlProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/utils/Tool.java" afterPath="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/utils/Tool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/html/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/js/account/register/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/account/register/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/js/account/sign_in/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/account/sign_in/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/js/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/dist/html/index.html" afterPath="$PROJECT_DIR$/target/classes/static/dist/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/dist/html/product/search_product.html" afterPath="$PROJECT_DIR$/target/classes/static/dist/html/product/search_product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/dist/js/account/register/index.js" afterPath="$PROJECT_DIR$/target/classes/static/dist/js/account/register/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/dist/js/account/sign_in/index.js" afterPath="$PROJECT_DIR$/target/classes/static/dist/js/account/sign_in/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/static/dist/images/products/iphoneX/iphonex.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/dist/images/products/iphonex/1.jpg" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -161,38 +88,48 @@
       <file leaf-file-name="my-cart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="397">
+              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/account/signin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="359">
-              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CartMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/product/CartMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -215,19 +152,6 @@
                 <element signature="e#909#910#0" expanded="true" />
                 <element signature="e#951#952#0" expanded="true" />
                 <element signature="e#999#1000#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/product/ProductService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="123" column="40" lean-forward="false" selection-start-line="123" selection-start-column="40" selection-end-line="123" selection-end-column="40" />
-              <folding>
-                <element signature="e#3934#3935#0" expanded="true" />
-                <element signature="e#3988#3989#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -337,14 +261,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/product/ProductMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/category/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/model/Cart.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/service/product/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/mapper/product/CartMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cscd/shoppingau/controller/product/CartController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html" />
       </list>
     </option>
   </component>
@@ -759,6 +683,35 @@
             <path>
               <item name="shoppingau" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopping-au" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-au" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-au" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping-au" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -998,7 +951,7 @@
       <workItem from="1527031929422" duration="3485000" />
       <workItem from="1527114602598" duration="1871000" />
       <workItem from="1527205046647" duration="36850000" />
-      <workItem from="1527468789719" duration="18169000" />
+      <workItem from="1527468789719" duration="18824000" />
     </task>
     <task id="LOCAL-00001" summary="fist init">
       <created>1518585733329</created>
@@ -1032,7 +985,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378614000" />
+    <option name="totallyTimeSpent" value="379269000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1045,6 +998,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1061,7 +1015,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47111112" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1257,14 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/account/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/a9e8b1ed/c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9/shop_au.product_user_rate">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1347,14 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/a9e8b1ed/c32eb6da-7c4f-4bd6-8754-3ba3fb04e8d9/shop_au.product">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1367,14 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1474,18 +1404,42 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="359">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/my-cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="397">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/product/product-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/product/search_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/dist/html/account/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
           <folding />
         </state>
       </provider>
